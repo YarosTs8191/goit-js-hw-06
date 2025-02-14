@@ -31,3 +31,9 @@ builder.padEnd("^");
 console.log(builder.getValue()); // "^.^"
 builder.padBoth("=");
 console.log(builder.getValue()); // "=^.^="
+
+function makeMessage(name, price) {
+  return `You picked ${name}, price per item is ${price} credits`;
+}
+
+console.log(makeMessage(`Yaroslav`, 300000));
